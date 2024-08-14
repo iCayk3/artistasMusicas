@@ -57,9 +57,7 @@ public class Artista {
 
     @Override
     public String toString() {
-        return "Artista{" +
-                "nome='" + nome + '\'' +
-                ", tipo=" + tipo +
-                '}';
+        return """
+                Artista: %s""".formatted(getNome());
     }
 }

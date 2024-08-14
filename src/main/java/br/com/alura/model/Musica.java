@@ -56,10 +56,7 @@ public class Musica {
 
     @Override
     public String toString() {
-        return "Musica{" +
-                "nome='" + nome + '\'' +
-                ", genero=" + genero +
-                ", artista=" + artista +
-                '}';
+        return """
+                Artista: %s, musica: %s, genero: %S""".formatted(artista.getNome(), getNome(), getGenero());
     }
 }

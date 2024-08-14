@@ -103,6 +103,8 @@ public class Principal {
             }
             artista.setMusicas(musicas);
             repository.save(artista);
+        } else {
+            System.out.println("Artista não encontrado!");
         }
     }
 
@@ -118,6 +120,8 @@ public class Principal {
             Artista artista = artistaEncontrado.get();
             List<Musica> musicasEncontradas = repository.encontrarMusicaPorArtista(artista);
             System.out.println(musicasEncontradas);
+        }else {
+            System.out.println("Artista nao encontrado!");
         }
     }
 }
